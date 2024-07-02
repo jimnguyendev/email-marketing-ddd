@@ -33,8 +33,7 @@ class Subscriber extends Model
 
     public function form(): BelongsTo
     {
-        return $this->belongsTo(Form::class)
-            ->withDefault();
+        return $this->belongsTo(Form::class)->withDefault();
     }
 
     public function receivedMails(): HasMany
