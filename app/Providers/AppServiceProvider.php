@@ -3,6 +3,8 @@
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
+use Libs\CommandBus\LaravelCommandBus;
+use Modules\Shared\Bus\CommandBusContract;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -22,6 +24,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        $this->app->singleton(
+            abstract: CommandBusContract::class,
+            concrete: LaravelCommandBus::class,
+        );
     }
 }

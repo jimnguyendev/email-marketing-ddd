@@ -5,7 +5,7 @@ namespace Database\Factories\Mail;
 use App\Models\Sequence;
 use App\Models\SequenceMail;
 use App\Models\User;
-use Domain\Shared\Enums\SequenceMailStatus;
+use Modules\Shared\Enums\SequenceMailStatus;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Random\RandomException;
 

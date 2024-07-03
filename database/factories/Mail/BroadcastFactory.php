@@ -4,7 +4,7 @@ namespace Database\Factories\Mail;
 
 use App\Models\Broadcast;
 use App\Models\User;
-use Domain\Shared\Enums\BroadcastStatus;
+use Modules\Shared\Enums\BroadcastStatus;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BroadcastFactory extends Factory

@@ -1,6 +1,6 @@
 <?php
 
-namespace Domain\Shared\Enums;
+namespace Modules\Shared\Enums;
 
 enum BroadcastStatus: string
 {
